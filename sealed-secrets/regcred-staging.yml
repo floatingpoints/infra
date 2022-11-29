@@ -1,0 +1,16 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: regcred
+  namespace: time4games-staging
+spec:
+  encryptedData:
+    .dockerconfigjson: AgC2MzmOouZ+RtXYsTvGQgrJxhbC/vtFkIHEo24xhx+P2tGG2+UaoI65R7FaphZ/7pJq2tfA88LJqpERTpvLXpLOoqYYlmcDYY4uPyiCZJ1vy93uiI+/CPJfypA6Vut7rzcXqF2oI7C5SeNikd6bIjPW+vNgF7BmQGaoagIHq4+lRh5Nwkc1VEeWu+xCJdcKPrAgFbnPJfleIfMTBIRiz51udWPFrd3c7NnPa4/szFj8hmKYSjbXtVMZFlOZInMTrkADuK1Ghtqg6czX6rUCNCQIKrSdBiccfBZnus+kZMy+aAlxHCBQL0oP0HgM3TyD1VMVuMn9iulxmakBtaepJOQfo5ocWNX2K6b77BTd276tqUtYgLF9KB737lPft0nP6956BAbOJ3RlFX+LzyhwvjfZtPh1kvuOIpV4VErogYbkAUJnJ2jpNtY6EsueEGPh9DQ51cF08ieJq5/kwpD1RJvZdmts/p6kzyo7E55o9t2P6f6FlX47ryF8v0lbuIUjEljH+tC/WFRc/FMl6BpHca1fYMHi/sob2qCf9FEYgdWXcfi5sKVBQMgsSurjMfUG+agQSn1dSKNutgUkEpV3SEiZjLthlSF0QRu+9N5sLKYdy0WAUPtxrxuaA1f8Dq36wBxvnZZaceEq9hheRSc5no7MEAOjV5y3Nc1c1DlUebWGF/OJ5YiSsTzAIW5Bot7+XYu87mqhrUtXBxjosu/5oS5cmq7K1scr79SNLWloFyU1KXsw460OMOYp8V9dahPxfO5TjWHnmqaEU/KMcFntwNtVECU65Vitt9VWfTWxwkJGn4iN0oAhcRdCEfWYJgEIUkhl/YLjOu59SW1ojgcIEehYz8Src+t7YlkeCUuNVRPkwoEGEEhUblC+6XQ227ORrMl3McgHl6X2FuCkNZRTUUv5nl37hmlkstPJkZq5xdLZEylG/w3ynwGuwD7YRaPgFs6knPvURsuYQTs7YbRVzfWDW5d8CZTRqZwANbbjZm1ChP+IixFN
+  template:
+    metadata:
+      creationTimestamp: null
+      name: regcred
+      namespace: time4games-staging
+    type: kubernetes.io/dockerconfigjson
+
