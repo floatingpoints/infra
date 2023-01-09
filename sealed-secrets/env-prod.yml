@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: env
+  namespace: time4games-prod
+spec:
+  encryptedData:
+    DB_PASSWORD: AgBGvdiElfm1t4KD6lBxLmc9XfawSalK2DOxYMnBeNppfXtWmIVgI+hvISMSt2LTBTAmJKJxLkaBsKGNMa41vVkTFT71V7ekfB2kb5n3ssjpqdoBYX5+7DWxngBmvL3iDhBmzwieOyP/9TEGVNq6NA35PUcxnw0XeZm84AEyuzTbXnj5W55Hp5UeJPrH6tbjpM8fE206MFhI0YOXRU2MEqrxSLxOeBzCJ7XlA0LgqFa1IUdp56hsckudLhVzTV4Hdppn6LDb7Iz05qtd/bHcGhz4uLh3F1azLYZBpF8wDawLVHd+Iq2WsfPE9Q442P36xP9gP4w0P+8dKrWG67qIUKG8tCSCVDEzkv+hn8Hy+ddqQduq9MBJNULSQJQXE8vF8r1ThITwQLegj02P7vKK5vREwnoGAE2DZRSpELdR+oA3Br7zrAzmCzoOVmvMZsUsj5EZxvOZOBsklhD3IG45h37f8D21PiPgDU6Ns9eR6+megCGjCSD794ecn+V78PS6vi3Mk18WKgR+jSX6pJljCLF7HomxAn4XIYBuuXbDidgJUfdl7Ltg4Kr5DDHTmc7b3ESki78wZK0ARSQrtcvUzmwMWFYOf3AtdP7DVEmxH5Hjy+SF9bitYw9BhDozkT2lsl4Z9ZH0jhsE3hfrwGkKwVo9F2HVHXX2PvA3qeS7KhZmlLQxjhIdRkvhNFOkcoR41xpCa1ABbsJ0zSVXq8/SHP4sxz2zKs4qSogcQu3I97+C/w==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: env
+      namespace: time4games-prod
+

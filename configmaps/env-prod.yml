@@ -1,0 +1,11 @@
+apiVersion: v1
+data:
+  DB_DATABASE: t4g_directus
+  DB_HOST: postgis.time4games-prod.svc.cluster.local
+  DB_PORT: '5432'
+  DB_USER: t4g_directus
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: env
+  namespace: time4games-prod

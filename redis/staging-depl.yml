@@ -27,7 +27,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: redis-srv
+  name: redis
   namespace: time4games-staging
 spec:
   selector:
