@@ -1,0 +1,15 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: env
+  namespace: time4games-staging
+spec:
+  encryptedData:
+    DB_PASSWORD: AgAtbo43Eb+RToy8hIX2gMUuFbwXp3nnVktq6yICOOEMZI0bQSv6Hyma4ZktzA+4zUJDP+BL4BtBT/c4hgsZRY/fsujfFy5E9qK0N5R2es5WG/pYvtrWe73sphY6ZVeQeA4eqozFwa5TapB5P10+/S1Y5IdierSeEGkoLKVTj5EIgxxJw2TzEqPe2wyVgpOngYhHrczDxqs630ENA6z6/Dq7z4lxzq3M8PkrlhnIfbvVikV/7FYIxSJ9VcbGSkedkzdlGzkDZm1eXFhtpHNuE+Xla3v5mqEIlSFqXl+WLK9EGa7COGrUuDFyCgVxM8GHtS2z4L9R42AIfqFwtUEoxa6MpvLzwBpBkOK4x1evVAHeCv0so9DsTszyqBjyvcWWc/51TXQCWdmcDxeOMdJSmHtgGRGd9xlU2Fc1lkcpwyLyDbts9zC68A4bYmkTYXHb3T5rw3zBk6Ce1zX+EWf8Zt0hp0YB/JvR8nrvaFA79NkZ7OLq9Q77IHTFYhPyVhdFW776mKmJwc9GRq1KWbc5YzAk2/jD3s8WJT/SqRJqvZHtNT2hJGU31aRRFoNKLSOYhD0sCq4RdYbm/ddvijXqt+8fZKtB6Tsr9na8sN5+FFFttaBzqxUKNYzJ9a7Xe8MdozKinoXj/qdU4+qXdSJk8z8tEW0r0Jo3aRmRWNvBwe1YQPdvc/gTNOPmdk1YBdtK13nTqn00RJsXAAXTOzd1wDPYRhnnDhXeLYmRjd9RPHxg7A==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: env
+      namespace: time4games-staging
+
