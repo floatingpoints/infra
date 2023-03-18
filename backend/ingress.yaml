@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: backend-ingress
+  namespace: time4games-prod
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-cluster-issuer
+spec:
+  tls:
+    - hosts:
+        - headless.time4.games
+      secretName: backend-cert-tls
+  rules:
+    - host: headless.time4.games
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: backend-srv
+                port:
+                  number: 8055
