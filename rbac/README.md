@@ -1,11 +1,5 @@
 # RBAC
 
-## Staging
-
-```bash
-kubectl apply -f . -n time4games-staging
-```
-
 ## Production
 
 ```bash
