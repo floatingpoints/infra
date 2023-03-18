@@ -3,6 +3,9 @@ name: Deploy to production
 on:
   workflow_call:
     inputs:
+      namespace:
+        required: true
+        type: string
       manifests:
         required: false
         type: string
