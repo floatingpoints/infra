@@ -1,0 +1,40 @@
+name: Deploy to production
+
+on:
+  workflow_call:
+    inputs:
+      manifests:
+        required: false
+        type: string
+        default: |
+          k8s/prod.depl.yaml
+    secrets:
+      kubeconfig:
+        required: true
+
+jobs:
+  prod:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+
+      - name: Install kubectl
+        uses: azure/setup-kubectl@v3
+        id: install-kubectl
+
+      - name: Set the Kubernetes context
+        uses: azure/k8s-set-context@v3
+        with:
+          method: kubeconfig
+          kubeconfig: ${{ secrets.kubeconfig }}
+
+      - name: Deploy to the Kubernetes cluster
+        uses: azure/k8s-deploy@v4
+        with:
+          namespace: ${{ inputs.namespace }}
+          manifests: ${{ inputs.manifests }}
+          strategy: basic
+          images: |
+            ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+          annotate-namespace: false
