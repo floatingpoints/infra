@@ -20,3 +20,14 @@ kubectl create secret generic --dry-run=client \
 ```bash
 kubectl apply -f .
 ```
+
+## Adminer sealed secret
+
+```bash
+kubectl create secret generic --dry-run=client \
+    postgis-basic-auth \
+    --namespace=time4games-prod \
+    --from-file=auth \
+    -o yaml \
+    | kubeseal --format=yaml > postgis-basic-auth.sealed-secret.yaml
+```
