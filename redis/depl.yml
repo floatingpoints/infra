@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: redis
-          image: redis:7
+          image: docker.dragonflydb.io/dragonflydb/dragonfly
           resources:
             requests:
               memory: '256Mi'
