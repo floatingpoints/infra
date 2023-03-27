@@ -15,19 +15,22 @@ kubectl create secret generic --dry-run=client \
     | kubeseal --format=yaml > env.sealed-secret.yaml
 ```
 
-## Deplopy resources
-
-```bash
-kubectl apply -f .
-```
-
 ## Adminer sealed secret
 
 ```bash
+export AUTH_USER=toBeReplaced
+export AUTH_PASSWORD=toBeReplaced
+echo "${AUTH_USER}:$(openssl passwd -stdin -apr1 <<< ${AUTH_PASSWORD})" >> auth
 kubectl create secret generic --dry-run=client \
     postgis-basic-auth \
     --namespace=time4games-prod \
     --from-file=auth \
     -o yaml \
-    | kubeseal --format=yaml > postgis-basic-auth.sealed-secret.yaml
+    | kubeseal --format=yaml > 0.postgis-basic-auth.sealed-secret.yaml
+```
+
+## Deplopy resources
+
+```bash
+kubectl apply -f .
 ```

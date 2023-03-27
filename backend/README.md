@@ -3,9 +3,9 @@
 ## Sealed Secrets
 
 ```bash
+export KEY=$(openssl rand -base64 16)
+export SECRET=$(openssl rand -base64 16)
 export ADMIN_PASSWORD=toBeReplaced
-export KEY=toBeReplaced
-export SECRET=toBeReplaced
 export DB_PASSWORD=toBeReplaced
 export EMAIL_SMTP_PASSWORD=toBeReplaced
 export STORAGE_S3_SECRET=toBeReplaced
